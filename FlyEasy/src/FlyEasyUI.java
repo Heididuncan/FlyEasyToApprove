@@ -245,7 +245,8 @@ public class FlyEasyUI {
     public static void main(String[] args){
 
         FlyEasyUI flyEasyInterface = new FlyEasyUI();
-		flyEasyInterface.runB();
+		//runB is the deleveoper menu I made and run is the main menu, WHICHEVER ID FIRST WITH PRINT OUT SO FIX BEFORE SHOWING/RUNNING
+	        flyEasyInterface.runB();
 		flyEasyInterface.run();
         
     }
