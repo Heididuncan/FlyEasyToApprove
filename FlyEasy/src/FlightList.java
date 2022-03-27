@@ -9,15 +9,15 @@ public class FlightList {
 	}
 	
 	public boolean addFlight(String airline, String flightDepartureDate, 
-    String flightArrivalDate, String departureTime, String arrivalTime, 
-    String steats, String seatColumn, String seatRow) {
+    String flightArrivalDate, String departureTime, String arrivalTime, String gate, 
+    int steats, String seatColumn, String seatRow, int price) {
         // I dont know if we care about this, well especially not yet
         //if(haveFlight(airline, flightDepartureDate, flightArrivalDate,
                // departureTime, arrivalTime, steats, seatColumn, seatRow))return false;
         //if(haveFlight(flightDepartureDate))return false;
 		
 		flightList.add(new RegisteredFlight(airline, flightDepartureDate, flightArrivalDate,
-                departureTime, arrivalTime, steats, seatColumn, seatRow));
+                departureTime, arrivalTime, gate, steats, seatColumn, seatRow, price));
 		return true;
     }
 

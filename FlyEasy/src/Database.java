@@ -11,5 +11,8 @@ public class Database {
     public static ArrayList<airportList> getAirports(){
         return new ArrayList<airportList>();
     }
+    public static ArrayList<HotelList> getHotels(){
+        return new ArrayList<HotelList>();
+    }
 
 }

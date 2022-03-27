@@ -5,9 +5,6 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 public class AirportDataWriter extends DataConstants {
     
-
-
-    
     public static void saveAirports() {
 		airportList airports = airportList.getInstance();
 		ArrayList<RegisteredAirport> airportsList = airports.getAirports();
@@ -31,7 +28,7 @@ public class AirportDataWriter extends DataConstants {
 	
 	public static JSONObject getAirportsJSON(RegisteredAirport airport) {
 		JSONObject airportDetails = new JSONObject();
-		airportDetails.put(AIRPORT_ID, airport.getId().toString());
+		airportDetails.put(AIRPORT_ID, airport.getAirportId().toString());
 		airportDetails.put(STATE, airport.getState());
 		airportDetails.put(CITY, airport.getCity());
 		airportDetails.put(AIRPORTNAME, airport.getAirportName());
